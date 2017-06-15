@@ -44,7 +44,7 @@ public class Storage<E> {
     }
 
     public static void main(String[] args) {
-        Storage<Integer> storage = new Storage<>(10);
+        final Storage<Integer> storage = new Storage<>(10);
 
         for (int i = 0; i < 50; i++) {
             new Thread("producer-" + i) {
